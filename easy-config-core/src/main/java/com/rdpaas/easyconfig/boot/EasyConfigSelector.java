@@ -10,14 +10,10 @@ import org.springframework.core.type.AnnotationMetadata;
  * SpringBootContext类显示使用@Component注解，毕竟万一有人不用这东西或者是别人项目中压根就不配置扫码你的
  * com.rdpaas包那也会出现SpringBootContext类无法正常被扫描导致无法正常进行工作。简单来说自己提供的依赖包应该
  * 尽量直接使用@Component注解让spring管理（鬼知道还要去扫描你的包名呢），需要让用户自己选择是否需要被spring管理
- * @author rongdi
- * @date 2019-09-22 8:05:14
  */
-public class EasyConfigSelector implements ImportSelector{
-
+public class EasyConfigSelector implements ImportSelector {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         return new String[]{SpringBootContext.class.getName()};
     }
-
 }

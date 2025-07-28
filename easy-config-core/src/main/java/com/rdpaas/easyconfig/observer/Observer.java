@@ -7,11 +7,8 @@ import java.util.concurrent.ExecutorService;
 
 /**
  * 观察者基类
- * @author rongdi
- * @date 2019-09-21 14:30:01
  */
 public abstract class Observer {
-
     public static String EASYCONFIG_CONFIG_PERIOD = "easyconfig.config.period";
 
     protected volatile boolean isRun = false;

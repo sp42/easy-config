@@ -13,8 +13,7 @@ public class EnvironmentContext {
     public static Properties currProperties;
 
     /**
-     * easy-confi需要的配置文件，放在bootstrap.properties中
+     * easy-config需要的配置文件，放在bootstrap.properties中
      */
     public static Properties easyConfigProperties;
-
 }
